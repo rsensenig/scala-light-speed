@@ -1,0 +1,47 @@
+id: file://<HOME>/Documents/Coding%20Projects/scala-at-light-speed/src/main/scala/com/rockthejvm/Basics.scala:[1661..1662) in Input.VirtualFile("file://<HOME>/Documents/Coding%20Projects/scala-at-light-speed/src/main/scala/com/rockthejvm/Basics.scala", "object Basics extends App {
+  // defining a value
+  val meaningOfLife: Int = 42 // const int meaningOfLife = 42
+
+  // Int, Boolean, Char, Double, Float, String
+  val aBoolean = false // type is optional
+
+  val aString = "I love Scala"
+  val aComposedString = "I" + " " + "love" + " " + "Scala"
+  val anInterpolatedString = s"The meaning of life is $meaningOfLife"
+
+  // expressions = structures that can be reduced to a value
+  // In other programming languages like JavaScript, Java, and C++ we think in terms of instructions, in Scala we think in terms of values, and composing these values to obtain new values
+  // In Scala everything is an expression that can be reduced to a value
+  val anExpression = 2 + 3
+
+  // if-expression
+  // this is-expression reduces to a single value - either 56 or 999 depending on the value of the meaningOfLife
+  val ifExpression = if (meaningOfLife > 43) 56 else 999 // in other languages: meaningOfLife > 43 ? 56 : 999
+  
+  // this chained if-expression is still a single expression because it reduces to a single value
+  // we're assigning values to these names based on whether the conditions are true or false
+  val chainedIfExpression = 
+    if (meaningOfLife > 43) 56
+    else if (meaningOfLife < 0) -2
+    else if (meaningOfLife > 999) 78
+    else 0
+  
+  // code blocks
+  val aCodeBlock = {
+    // definitions
+    // can define variables, functions, inner code blocks, etc.
+    // can make multiple definitions within a code block
+    val aLocalValue = 67
+
+    // value of block is the value of the last expression
+    aLocalValue + 3 // in other languages: return aLocalValue + 3
+  }
+
+  // define a function
+  def 
+
+}
+")
+file://<HOME>/Documents/Coding%20Projects/scala-at-light-speed/src/main/scala/com/rockthejvm/Basics.scala:43: error: expected identifier; obtained rbrace
+}
+^
